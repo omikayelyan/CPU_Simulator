@@ -144,7 +144,7 @@ void CPU::translate()
         {
             break;
         }
-        else if (line.find(':') != -1)
+        else if (line.find(':'))
         {
             line.pop_back();
             obj.jump.insert(std::make_pair(line, file.tellg()));
